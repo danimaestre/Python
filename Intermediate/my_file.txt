@@ -1,0 +1,6 @@
+Mi nombre es Brais
+Mi apellido es Moure
+Edad 35
+Mi lenguaje preferido es Python
+Aunque tambien me gusta kotlin
+Y Swift

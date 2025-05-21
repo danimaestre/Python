@@ -1,0 +1,18 @@
+import tkinter as tk
+
+class GridButtonsApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Botones en Cuadrícula")
+
+        # Crear una cuadrícula de 3x3 de botones
+        for i in range(3):
+            for j in range(3):
+                btn = tk.Button(root, text=f"Botón {i*3 + j + 1}", width=10, height=3)
+                btn.grid(row=i, column=j, padx=5, pady=5)
+
+# Ejecutar la aplicación
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = GridButtonsApp(root)
+    root.mainloop()
