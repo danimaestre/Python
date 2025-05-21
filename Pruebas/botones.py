@@ -4,6 +4,7 @@ class GridButtonsApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Botones en Cuadrícula")
+        self.root.geometry("+700+200")
 
         # Crear una cuadrícula de 3x3 de botones
         
