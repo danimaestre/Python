@@ -6,6 +6,8 @@ class GridButtonsApp:
         self.root.title("Botones en Cuadrícula")
 
         # Crear una cuadrícula de 3x3 de botones
+        
+    def crearBotones(self):
         for i in range(3):
             for j in range(3):
                 btn = tk.Button(root, text=f"Botón {i*3 + j + 1}", width=10, height=3)
@@ -15,4 +17,5 @@ class GridButtonsApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = GridButtonsApp(root)
+    app.crearBotones()
     root.mainloop()
