@@ -11,15 +11,15 @@ def calcular():
                 D = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
                 U = ["", "I","II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
                 
-                label_salida.config(text=f"{M[num//1000]}{C[(num%1000)//100]}{D[(num%100)//10]}{U[num%10]}")
+                label_salida.config(text=f"{M[num//1000]}{C[(num%1000)//100]}{D[(num%100)//10]}{U[num%10]}", bg="yellow")
                 
-                #print(f"{M[num//1000]}{C[(num%1000)//100]}{D[(num%100)//10]}{U[num%10]}")
+                
         else:
-            label_salida.config(text="El numero ingresado debe\n estar en un rango entre 1 y 3999")
+            label_salida.config(text="El numero ingresado debe\n estar en un rango entre 1 y 3999", bg="red")
         
             
-    #except ValueError:
-            #label_salida.config(text='Tiene que ser un entero')
+    except ValueError:
+            label_salida.config(text='Tiene que ser un entero')
             
     except Exception as e:
             label_salida.config(text=f"Valor no valido: \n {e}")
@@ -46,7 +46,7 @@ entry1.pack(pady=10)
 
 label2 = tk.Label(ventana, text="Numero romano",font=("Arial", 14),bg="light gray" ).pack(pady=20)
 
-label_salida = tk.Label(ventana, text="XXLDC",font=("Arial", 14),bg="light gray" )
+label_salida = tk.Label(ventana, bg="light blue",font=("Arial", 14) )
 label_salida.pack(pady=20)
 
 ### CREACION BOTON ###
