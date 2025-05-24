@@ -5,7 +5,7 @@ while num != 0:
         num = int(input("Ingresa un numero entero para convertirlo a romano: ")) 
         if 0 < num < 4000:
                 M = ["", "M", "MM", "MMM"]
-                C = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCC", "CM"]
+                C = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
                 D = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
                 U = ["", "I","II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
                 
