@@ -34,7 +34,7 @@ ventana.config(bg= "light blue")
 
 ### CREACION LABEL ###
 
-label1 = tk.Label(ventana, text="Introduce un numero",font=("Arial", 14),bg="light gray" ).pack(pady=30)
+label1 = tk.Label(ventana, text="Introduce un numero",font=("Arial", 14),bg="light gray", relief=tk.SUNKEN ).pack(pady=30)
 
 ### CREACION ENTRY ###
 
