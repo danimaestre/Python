@@ -7,7 +7,7 @@ root = tk.Tk()
 root.title("Widgets practica")
 
 # Dimensiones de ventana y posicionamiento
-#root.geometry("400x300+500+150")
+#root.geometry("400x300+500+150").
 
 #Entrada de datos
 entrada = tk.Entry(root, 

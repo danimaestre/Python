@@ -54,3 +54,4 @@ label_salida.pack(pady=20)
 boton_calcular = tk.Button(ventana, text="CALCULAR", command=calcular).pack(pady=20)
 
 ventana.mainloop()
+#

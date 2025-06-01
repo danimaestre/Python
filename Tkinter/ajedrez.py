@@ -26,5 +26,5 @@ for i in range(10):
         
 
 
-#Bucle principal
+#Bucle principal de fichero
 root.mainloop()

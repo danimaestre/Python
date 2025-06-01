@@ -56,4 +56,4 @@ boton = tk.Button(marco_2,
 
 #Bucle de ejecucion
 root.mainloop()
-#13:49
+#13:49:37

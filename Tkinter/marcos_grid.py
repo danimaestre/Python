@@ -54,5 +54,5 @@ boton = tk.Button(marco_2,
                   ).pack()
 
 
-#Bucle de ejecucion
+#Bucle de ejecucion#
 root.mainloop()
