@@ -1,3 +1,7 @@
+"""
+Crea un tablero de ajedrez
+"""
+
 import tkinter as tk
 
 # Creacion ventana principal
@@ -23,8 +27,6 @@ for i in range(10):
                             height=50,
                             border=0)
             marco_1.grid(row=i,column=j)
-        
-
 
 #Bucle principal de fichero
 root.mainloop()
