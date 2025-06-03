@@ -1,18 +1,25 @@
+"""
+Modulo que crea radiobuttons con imagenes
+"""
+
 import tkinter as tk
 import os
-from PIL import ImageTk, ImageColor, Image
+from PIL import ImageTk,  Image
 
 # Funciones
 def enviar():
     if opcion.get()== "Error":
         tk.Label(root,
-                 text="¡No has seleccionado ninguna cuenta. ¡Por favor, intentelo de nuevo",
-                 background="red2",
-                 foreground="gray98").pack()
+                 text="¡No has seleccionado ninguna cuenta.\n¡Por favor, intentelo de nuevo",
+                 background="gray98",
+                 foreground="red2",
+                 font=("arial", 14)).pack()
     else:
-        tk.Label(root, text=f"hola {opcion.get()}. Accediendo a tu cuenta").pack()
+        tk.Label(root, 
+                text=f"hola {opcion.get()}. Accediendo a tu cuenta",
+                font=("arial", 15)).pack()
         
-
+                
 # Creacion ventana principal
 root = tk.Tk()
 
@@ -74,30 +81,34 @@ tk.Radiobutton(marco,
                text="Emma",
                variable=opcion,
                value="Emma",
-               background="yellow").grid(row=1, column=0)
+               background="yellow",
+               font=(16)).grid(row=1, column=0)
 
 tk.Radiobutton(marco,
                text="Jacobo",
                variable=opcion,
                value="Jacobo",
                background="#9c5412",
-               ).grid(row=1, column=1)
+               font=16).grid(row=1, column=1)
 
 tk.Radiobutton(marco,
                text="Noha",
                variable=opcion,
                value="Noha",
-               background="#3C4976").grid(row=3, column=0)
+               background="#3C4976",
+               font=16).grid(row=3, column=0)
 
 tk.Radiobutton(marco,
                text="Sophia",
                variable=opcion,
                value="Sophia",
-               background="light blue").grid(row=3, column=1)
+               background="light blue",
+               font=16).grid(row=3, column=1)
 
 # Creacion boton
 boton = tk.Button(root,
                   text="Entrar",
+                  font=30,
                   command=enviar)
 boton.pack(pady=30)
 
