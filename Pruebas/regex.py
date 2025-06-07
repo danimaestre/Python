@@ -1,7 +1,7 @@
 import re
 
-email = "danimAstre@hotmail.com"
-regex = r'^[a-zA-z]+@{1}+[a-z]+\.{1}+[a-z]{2,3}$'
+email = "danimastre@hotmail.com"
+regex = r'^[a-zA-z]+@{1}[a-z]+\.{1}[a-z]{2,3}$'
 
 
 
