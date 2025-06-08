@@ -36,7 +36,7 @@ entrada.bind("<Button-1>", lambda e: entrada.delete(0,tk.END))
 
 #Funcion para el boton
 def enviar():
-    nombre = entrada.get() #Obtiene y almacena el texto de la entrada
+    nombre = entrada.get().capitalize() #Obtiene y almacena el texto de la entrada
     tk.Label(marco_3,
              text=f"Hola {nombre}",
              background="skyblue",

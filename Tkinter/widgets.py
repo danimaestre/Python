@@ -15,12 +15,14 @@ entrada = tk.Entry(root,
                    border=3, 
                    foreground="red", 
                    width=30,
-                   ).pack()
+                   )
+entrada.pack()
+
 
 #Funcion para el boton
 def enviar():
     tk.Label(root,
-             text="Se ha pulsado el boton",
+             text=f"Se ha pulsado el boton: {entrada.get()} ",
              background="skyblue",
              width=26
              ).pack()

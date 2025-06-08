@@ -3,11 +3,13 @@ class Persona:
     def __init__(self, nombre, edad):
         self.nombre = nombre
         self.edad = edad
+        
 def crear_diccionario(personas):
     diccionario = {}
     for persona in personas:
         diccionario[persona.nombre] = persona.edad     
     return diccionario
+
 # Ejemplo de uso
 persona1 = Persona("Daniel", 30)
 persona2 = Persona("María", 25)
